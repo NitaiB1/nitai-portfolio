@@ -164,6 +164,15 @@ export const certifications: Certification[] = [
 
 export const projects: Project[] = [
   {
+    title: "NRECON — Cyber Reconnaissance & Global Intelligence Platform",
+    description: "The premier open-source cyber reconnaissance and intelligence platform. Track 10,000+ aircraft, 2,000 satellites, and worldwide CCTV cameras in real-time on a 3D globe. Built with port scanners, DNS lookups, WHOIS queries, SSL certificate analysis, subdomains, and 20+ live threat telemetry feeds.",
+    tags: ["Cybersecurity", "OSINT", "Cloud Run", "Next.js", "Threat Intelligence", "3D Globe"],
+    imageUrl: "/nrecon.png",
+    dataAiHint: "cyber reconnaissance intelligence globe",
+    liveLink: "https://nrecon-220354660616.us-central1.run.app/",
+    repoLink: undefined,
+  },
+  {
     title: "Predictive Cloud Cost Forecasting & Anomaly Detection",
     description: "Engineered ML models and AWS Lambda solutions for proactive cloud cost forecasting and anomaly detection, significantly improving budget oversight for The Shoprite Group.",
     tags: ["AWS", "Machine Learning", "Python", "FinOps", "Lambda", "Cost Explorer"],

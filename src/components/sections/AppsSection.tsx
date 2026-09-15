@@ -10,6 +10,14 @@ import { cn } from '@/lib/utils';
 
 const apps = [
   {
+    title: "NRECON 🛰️",
+    description: "Cyber reconnaissance & global intelligence platform with real-time 3D tracking of aircraft, satellites, worldwide CCTV, and threat telemetry.",
+    href: "https://nrecon-220354660616.us-central1.run.app/",
+    imgSrc: "/nrecon.png",
+    imgHint: "cyber reconnaissance intelligence globe",
+    className: "md:col-span-1",
+  },
+  {
     title: "FinBridge",
     description: "A stock analysis tool that provides real time analytics.",
     href: "https://studio--studio-4089791172-3532d.us-central1.hosted.app/",

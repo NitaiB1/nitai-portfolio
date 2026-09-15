@@ -19,15 +19,40 @@ export function ProjectsSection() {
     <Section id="projects" title="Featured Projects" icon={sectionIcons.projects} subtitle="A selection of projects that demonstrate my skills and experience.">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => {
+          const handleCardClick = (e: React.MouseEvent) => {
+            if ((e.target as HTMLElement).closest('a, button')) {
+              return;
+            }
+            if (project.liveLink) {
+              window.open(project.liveLink, '_blank', 'noopener,noreferrer');
+            }
+          };
+
+          const handleKeyDown = (e: React.KeyboardEvent) => {
+            if (project.liveLink && (e.key === 'Enter' || e.key === ' ')) {
+              if ((e.target as HTMLElement).closest('a, button')) {
+                return;
+              }
+              e.preventDefault();
+              window.open(project.liveLink, '_blank', 'noopener,noreferrer');
+            }
+          };
+
           return (
             <ActiveZoneAnimator
               key={index}
               entryDelay={baseDelay + index * staggerIncrement}
+              onClick={project.liveLink ? handleCardClick : undefined}
+              onKeyDown={project.liveLink ? handleKeyDown : undefined}
+              tabIndex={project.liveLink ? 0 : undefined}
+              role={project.liveLink ? "link" : undefined}
+              aria-label={project.liveLink ? `Open ${project.title}` : undefined}
               className={cn(
                 "flex flex-col h-full transition-all duration-300 ease-in-out rounded-3xl", // Base transition & rounding for border
                 // EvervaultCard has its own hover. Active zone adds border, shadow, lift.
                 "hover:shadow-2xl hover:-translate-y-1", 
-                "data-[in-active-zone=true]:shadow-2xl data-[in-active-zone=true]:border data-[in-active-zone=true]:border-accent data-[in-active-zone=true]:-translate-y-1"
+                "data-[in-active-zone=true]:shadow-2xl data-[in-active-zone=true]:border data-[in-active-zone=true]:border-accent data-[in-active-zone=true]:-translate-y-1",
+                project.liveLink && "cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               )}
               entryAnimationType="fade-in-up"
               threshold={0.01}
@@ -41,7 +66,12 @@ export function ProjectsSection() {
                 <EvervaultCard className="w-full flex-grow rounded-[calc(1.5rem-2px)]">
                   <div className="relative z-20 flex flex-col justify-between h-full bg-card/80 dark:bg-card/70 backdrop-blur-sm p-4 rounded-2xl">
                     <div>
-                      <CardTitle className="text-xl font-headline text-primary mb-2">{project.title}</CardTitle>
+                      <CardTitle className="text-xl font-headline text-primary mb-2 flex items-center justify-between gap-2">
+                        <span>{project.title}</span>
+                        {project.liveLink && (
+                          <ExternalLink className="h-4 w-4 shrink-0 text-muted-foreground transition-colors group-hover/card:text-primary" />
+                        )}
+                      </CardTitle>
                       <CardDescription className="text-foreground/90 text-sm line-clamp-5 mb-3">{project.description}</CardDescription>
                       {project.tags && project.tags.length > 0 && (
                         <div className="mb-4 flex flex-wrap gap-1.5">
@@ -55,7 +85,7 @@ export function ProjectsSection() {
                       {project.liveLink && (
                         <Button variant="outline" size="sm" asChild className="text-xs">
                           <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="mr-1.5 h-3.5 w-3.5" /> Live Demo
+                            <ExternalLink className="mr-1.5 h-3.5 w-3.5" /> Visit Site
                           </Link>
                         </Button>
                       )}
