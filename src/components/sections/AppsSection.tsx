@@ -10,6 +10,14 @@ import { cn } from '@/lib/utils';
 
 const apps = [
   {
+    title: "FinOps Radar 📡",
+    description: "Cloud financial operations intelligence aggregator tracking cloud providers, FinOps Foundation, and community updates in real-time.",
+    href: "https://studio-7063241873-9e774.web.app",
+    imgSrc: "/finops-radar.png",
+    imgHint: "cloud finops radar dashboard",
+    className: "md:col-span-1",
+  },
+  {
     title: "NRECON 🛰️",
     description: "Cyber reconnaissance & global intelligence platform with real-time 3D tracking of aircraft, satellites, worldwide CCTV, and threat telemetry.",
     href: "https://nrecon-220354660616.us-central1.run.app/",

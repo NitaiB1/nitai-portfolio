@@ -164,6 +164,15 @@ export const certifications: Certification[] = [
 
 export const projects: Project[] = [
   {
+    title: "FinOps Radar — Cloud Financial Intelligence Platform",
+    description: "Real-time news, release tracking, and intelligence aggregator for Cloud FinOps. Pulls updates from AWS, Azure, GCP, FinOps Foundation, and the community with deduplication, rule-based tagging, scoring, and clean RSS/JSON feeds.",
+    tags: ["FinOps", "Cloud Cost", "TypeScript", "React", "Firebase Hosting", "Vite"],
+    imageUrl: "/finops-radar.png",
+    dataAiHint: "cloud finops radar intelligence dashboard",
+    liveLink: "https://studio-7063241873-9e774.web.app",
+    repoLink: undefined,
+  },
+  {
     title: "NRECON — Cyber Reconnaissance & Global Intelligence Platform",
     description: "The premier open-source cyber reconnaissance and intelligence platform. Track 10,000+ aircraft, 2,000 satellites, and worldwide CCTV cameras in real-time on a 3D globe. Built with port scanners, DNS lookups, WHOIS queries, SSL certificate analysis, subdomains, and 20+ live threat telemetry feeds.",
     tags: ["Cybersecurity", "OSINT", "Cloud Run", "Next.js", "Threat Intelligence", "3D Globe"],
