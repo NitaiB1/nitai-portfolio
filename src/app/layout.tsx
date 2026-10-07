@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     default: 'Nitai Baboolal | Portfolio',
     template: `%s | Nitai Baboolal`,
   },
-  description: 'Personal portfolio of Nitai Baboolal, a Cloud FinOps Analyst and Analytics Engineer.',
+  description: 'Personal portfolio of Nitai Baboolal, an Integration Specialist, Cloud FinOps Analyst, and Analytics Engineer.',
   alternates: {
     canonical: '/',
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Nitai Baboolal | Portfolio',
-    description: 'Personal portfolio of Nitai Baboolal, a Cloud FinOps Analyst and Analytics Engineer.',
+    description: 'Personal portfolio of Nitai Baboolal, an Integration Specialist, Cloud FinOps Analyst, and Analytics Engineer.',
     url: siteUrl,
     siteName: "Nitai Baboolal's Portfolio",
     images: [
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Nitai Baboolal | Portfolio',
-    description: 'Personal portfolio of Nitai Baboolal, a Cloud FinOps Analyst and Analytics Engineer.',
+    description: 'Personal portfolio of Nitai Baboolal, an Integration Specialist, Cloud FinOps Analyst, and Analytics Engineer.',
     images: [personalInfo.profileImageUrl],
   },
 };

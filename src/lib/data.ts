@@ -41,7 +41,7 @@ export interface Project {
 export const personalInfo = {
   name: "Nitai Baboolal",
   shortName: "Nitai B.",
-  title: "Cloud FinOps Analyst | Analytics Engineer",
+  title: "Integration Specialist | Cloud FinOps Analyst | Analytics Engineer",
   email: "baboolalnitai@gmail.com",
   linkedin: "https://www.linkedin.com/in/nitai-b/",
   website: "https://nitai.pro",
@@ -53,8 +53,8 @@ export const personalInfo = {
   resumeUrl: "/nbaboolal.docx",
 };
 
-export const aboutMe = `Driven by a passion for optimizing cloud costs and delivering strategic insights, I am a seasoned Cloud FinOps Analyst with an Analytics Engineering secondment and a Postgraduate Diploma in Industrial Engineering (Data Science) from Stellenbosch University. Throughout my career, I have harnessed advanced analytics, machine learning, and cloud computing to architect and implement cost-effective solutions across AWS, GCP, and Azure environments. At The Shoprite Group, I developed and deployed predictive cost-forecasting models and automated anomaly-detection pipelines using AWS Lambda, Cost Explorer, EventBridge, and SES, resulting in a proactive FinOps framework that improved budget oversight and delivered measurable savings. My tenure at ShopriteX involved leading cross-account Terraform migrations and refactoring Airflow DAGs and AWS Glue jobs, ensuring seamless infrastructure transitions.
-I complement my practical experience with robust quantitative research skills as the Chief Quantitative Researcher at NPro Technology, where I design and back-test trading strategies in commodities and foreign-exchange markets. My technical toolkit includes Python, SQL, BigQuery, Athena, PowerBI, and industry-standard machine-learning libraries. Adept at translating complex data findings into actionable business recommendations, I excel in collaborating with multidisciplinary teams to drive operational excellence, enhance financial performance, and align technology solutions with organizational goals. I hold 15 industry certifications.`;
+export const aboutMe = `Driven by a passion for enterprise system reliability, cloud optimization, and delivering strategic insights, I am an Integration Specialist at Standard Bank Group, seasoned Cloud FinOps Analyst, and Analytics Engineer with a Postgraduate Diploma in Industrial Engineering (Data Science) from Stellenbosch University. Throughout my career, I have harnessed advanced analytics, machine learning, and cloud computing to architect and implement robust solutions across enterprise and multi-cloud environments (AWS, GCP, Azure). At Standard Bank, I focus on integration architecture, Nagios decommissioning, and event management. At The Shoprite Group, I engineered predictive cost-forecasting ML models, automated anomaly-detection pipelines, and built generative AI agents using Amazon Q Developer and Claude. My tenure at ShopriteX involved leading cross-account Terraform migrations and refactoring Airflow DAGs and AWS Glue jobs, ensuring seamless infrastructure transitions.
+I complement my practical experience with robust quantitative research skills as the Chief Quantitative Researcher at NPro Technology, where I design and back-test trading strategies in commodities and foreign-exchange markets. With foundational engineering training in Electrical Engineering and a Bachelor's in ICT, my technical toolkit includes Python, SQL, BigQuery, Athena, PowerBI, and industry-standard machine-learning libraries. Adept at translating complex data findings into actionable business recommendations, I excel in collaborating with multidisciplinary teams to drive operational excellence, enhance financial performance, and align technology solutions with organizational goals.`;
 
 export const skills: Skill[] = [
   { name: "Machine Learning", description: "RandomForests, GradientBoost, Ensemble techniques", icon: Brain },
@@ -71,21 +71,46 @@ export const skills: Skill[] = [
 
 export const experiences: Experience[] = [
   {
-    role: "Cloud Financial Operations Analyst",
-    company: "The Shoprite Group of Companies",
-    period: "March 2024 - Present",
+    role: "PPB: Integration Specialist",
+    company: "Standard Bank Group",
+    period: "August 2026 - Present",
     tasks: [
-      "Implemented Machine Learning Models to forecast business unit costs.",
+      "Decommissioning of Nagios host systems.",
+      "IBM DataPower Architecture Documentation.",
+      "Performs event management by monitoring dashboards and system environments. Monitoring of key systems to ensure proactive availability of applications to customers.",
+      "Correctly diagnoses, resolves, documents and escalates system incidents through to resolution.",
+      "Effectively communicate to clients, peers, and management any system issues that affect the quality or reliability of supported systems.",
+      "Trend analysis to identify hot spots (Daily, weekly, monthly, year on year).",
+    ],
+  },
+  {
+    role: "Cloud FinOps Analyst",
+    company: "The Shoprite Group of Companies",
+    period: "March 2024 - August 2026",
+    tasks: [
+      "Architected, engineered, and secured Slack AI Agent to assist in AWS cost queries utilizing Amazon Q Developer, Claude, and AWS Pricing API tools.",
+      "Implemented Machine Learning Models to forecast business unit costs whilst taking seasonality, trends and noise into account.",
       "Engineered AWS Lambda solution to query AWS Cost Explorer for cost anomaly detection triggered by Event Bridge and sent using SES.",
-      "Developed and deployed custom FinOps automation tools using AWS Lambda for idle instance detection, helping reduce unnecessary compute costs.",
+      "Developed and deployed automated FinOps tools using AWS Lambda for idle instance detection, helping reduce unnecessary compute costs.",
       "Leveraged BigQuery to automate early-warning cost detection, enabling proactive financial interventions and improved budget oversight.",
-      "Executed ad-hoc SQL queries via AWS Athena/Big Query to extract actionable insights into team-specific cloud spending patterns.",
+      "Executed ad-hoc SQL queries via AWS Athena to extract actionable insights into team-specific cloud spending patterns.",
+      "Managed monthly GCP Cloud Financial Reporting Processes via BigQuery.",
       "Built AWS Cost Explorer reports to reduce time taken for Data and Analytics cost reporting.",
-      "Monitored daily cloud expenditures and prepared comprehensive weekly and monthly reports for senior management review.",
-      "Analysed cloud usage data to collate, prioritize, and recommend optimization strategies, identifying significant potential savings.",
+      "Monitored daily cloud expenditures and prepared comprehensive weekly and monthly reports.",
+      "Performed weekly cost tracking reporting to the Head of Engineering (Shoprite Technology).",
+      "Analyzed cloud usage data to collate, prioritize, and recommend optimization strategies, identifying significant potential savings.",
       "Provided expert guidance on cloud cost optimization strategies—including rightsizing and power scheduling—to drive cost reduction initiatives.",
       "Collaborated closely with Engineering teams to implement best practices and actionable cost optimization recommendations.",
       "Prepared detailed quotations for AWS system modifications, supporting informed decision-making and effective budget management.",
+    ],
+  },
+  {
+    role: "Analytics Engineer",
+    company: "ShopriteX",
+    period: "May 2025 - October 2025",
+    tasks: [
+      "Cross-Account Terraform Migration: Spearheaded the migration of Terraform-managed AWS resources from one account to another.",
+      "Pipeline & Configuration Cutover: Refactored Airflow DAGs and AWS Glue jobs for the target account.",
     ],
   },
   {
@@ -99,21 +124,23 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    role: "Junior Financial Operations Analyst",
-    company: "OneNebula",
-    period: "January 2023 – Feb 2024",
+    role: "Junior FinOps Analyst",
+    company: "1Nebula",
+    period: "January 2023 - March 2024",
     tasks: [
-      "Analysed cloud expense data across both AWS and Azure environments to uncover actionable cost-saving opportunities.",
-      "Developed intuitive PowerBI dashboards tailored to client specifications for enhanced visibility into cloud spending.",
-      "Delivered clear, data-driven presentations of key findings and cost optimization strategies to clients.",
-      "Utilized SQL and Python scripts to find abnormalities within the data.",
-      "Provided strategic rightsizing recommendations to optimize resource allocation and reduce unnecessary cloud spending.",
+      "Developed and maintained automated Power BI dashboards for AWS and Azure cost visibility across enterprise clients.",
+      "Built FinOps monthly and weekly reports highlighting anomalies, top spend areas, savings opportunities, and purchasing plan coverage.",
+      "Collaborated with clients in bi-weekly review sessions to present insights, align on cloud spend trends, and recommend optimization actions.",
+      "Scripted SQL queries to identify idle, unattached, or over provisioned resources and supported AI model testing for anomaly detection pilots.",
+      "Assisted in implementing a savings tracker to monitor realized and projected savings across multiple accounts.",
+      "Conducted deep-dive investigations into high-cost services such as data transfers, backup storage, and orphaned resources.",
+      "Provided guidance on cloud cost management best practices, including rightsizing, scheduling, and reserved instance coverage.",
     ],
   },
   {
     role: "Data Analyst",
     company: "Brainnest",
-    period: "March 2022 – April 2022",
+    period: "March 2022 - April 2022",
     tasks: [
       "Conducted analysis on large data sets to identify patterns, trends, emerging behaviors, etc.",
       "Applied advanced statistical data analysis methods.",
@@ -129,22 +156,35 @@ export const education: EducationItem[] = [
   {
     degree: "PGDip (Eng) Industrial Engineering (Data Science)",
     institution: "Stellenbosch University",
-    period: "2024 - 2025",
+    period: "Jan 2024 – Dec 2026",
     details: [
+      "Data Science",
       "Applied Machine Learning",
-      "Optimisation",
+      "Optimization",
       "Big Data",
       "Data Analytics",
+      "Industrial Management",
+      "Project Management",
     ],
   },
   {
-    degree: "Bachelor of Information and Communications Technology",
+    degree: "Bachelor of Information and Communications Technology (ICT)",
     institution: "Durban University of Technology",
-    period: "2022",
+    period: "Dec 2022",
     details: [
-      "18 Distinctions",
-      "77% & 75% average in second and third year",
-      "BankSeta bursary",
+      "17 Distinctions",
+      "BankSeta Bursary",
+    ],
+  },
+  {
+    degree: "Higher National Diploma: Electrical Engineering (Heavy Current)",
+    institution: "Durban University of Technology",
+    period: "Incomplete",
+    details: [
+      "Electronics",
+      "Digital Systems",
+      "Mathematics",
+      "Electrical Engineering",
     ],
   },
 ];
